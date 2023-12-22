@@ -8,8 +8,8 @@ ans = 0
 
 def getNum(i, j):
     cnt = 0
-    for x in range(i + 3):
-        for y in range(i + 3):
+    for x in range(i, i + 3):
+        for y in range(j,j + 3):
             if a[x][y] == 1:
                 cnt += 1
     return cnt
