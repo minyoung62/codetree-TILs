@@ -73,10 +73,9 @@ def simulation():
 
 for _ in range(t):
     simulation()
+
 ans = 0
 for i in range(n):
     for j in range(n):
-        if marbles[i][j] == 1:
-
-            ans += 1
+            ans += marbles[i][j]
 print(ans)
