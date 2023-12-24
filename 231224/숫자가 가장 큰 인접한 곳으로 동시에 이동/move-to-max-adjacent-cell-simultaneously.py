@@ -15,7 +15,7 @@ next_marbles = [
     for _ in range(n)
 ]
 
-for i in range(m):
+for _ in range(m):
     x, y = tuple(map(int, input().split()))
     marbles[x-1][y-1] = 1
 
