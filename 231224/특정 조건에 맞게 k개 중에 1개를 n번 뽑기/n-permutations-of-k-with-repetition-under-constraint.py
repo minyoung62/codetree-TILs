@@ -10,9 +10,8 @@ def choose(cnt):
         for i in range(1, k + 1):
             if cnt >= 2 and selected[cnt-1] == i and selected[cnt-2] == i:
                 continue
-      
-                selected[cnt] = i
-                choose(cnt + 1)
+            selected[cnt] = i
+            choose(cnt + 1)
             
 
 choose(0)
