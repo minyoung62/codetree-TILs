@@ -11,7 +11,7 @@ def choose(cnt):
             if cnt >= 2 and (selected[cnt-2] != i and selected[cnt-1] != i):
                 selected[cnt] = i
                 choose(cnt + 1)
-            else:
+            elif cnt <= 2:
                 selected[cnt] = i
                 choose(cnt + 1)
 choose(0)
