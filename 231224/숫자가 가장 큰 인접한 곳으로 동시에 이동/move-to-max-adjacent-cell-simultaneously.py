@@ -52,7 +52,7 @@ def move_marble():
 
     for i in range(n):
         for j in range(n):
-            if marbles[i][j] == 1:
+            if marbles[i][j] >= 1:
                 move(i, j)
                 
     for i in range(n):
@@ -73,9 +73,10 @@ def simulation():
 
 for _ in range(t):
     simulation()
-
 ans = 0
 for i in range(n):
     for j in range(n):
-            ans += marbles[i][j]
+        if marbles[i][j] == 1:
+
+            ans += 1
 print(ans)
