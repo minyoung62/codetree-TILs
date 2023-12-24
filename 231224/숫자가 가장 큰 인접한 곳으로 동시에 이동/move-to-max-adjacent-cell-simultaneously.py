@@ -23,8 +23,8 @@ for _ in range(m):
 dxs = [1, -1, 0, 0]
 dys = [0, 0, -1, 1]
 
-def inRange(x, y):
-    return 0 <= x < n and 0 <= y < n
+def inRange(nx, ny):
+    return 0 <= nx < n and 0 <= ny < n
 
 def findNextStep(x, y):
     maxNum = 0 
