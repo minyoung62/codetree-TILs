@@ -67,7 +67,6 @@ def delete_mabel():
 def simulation():
     move_marble()
 
-    print()
     delete_mabel()
 
 
