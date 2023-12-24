@@ -1,13 +1,12 @@
 k, n= tuple(map(int, input().split()))
-selected = []
+selected = [0] * n
 def choose(cnt):
     if cnt == n:
         print(*selected)
         return
     
     for i in range(1, k + 1):
-        selected.append(i)
+        selected[cnt] = i 
         choose(cnt + 1)
-        selected.pop()
 
 choose(0)
