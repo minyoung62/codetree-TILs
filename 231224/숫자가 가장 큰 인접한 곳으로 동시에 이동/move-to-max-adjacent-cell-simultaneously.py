@@ -2,7 +2,7 @@ n, m, t= tuple(map(int, input().split()))
 
 a = [
     list(map(int, input().split()))
-    for _ in range(4)
+    for _ in range(n)
 ]
 
 marbles = [
@@ -15,6 +15,7 @@ next_marbles = [
     for _ in range(n)
 ]
 
+# 구슬이 있는 곳에 1을 표시합니다.
 for _ in range(m):
     x, y = tuple(map(int, input().split()))
     marbles[x-1][y-1] = 1
