@@ -27,9 +27,9 @@ def inRange(nx, ny):
     return 0 <= nx < n and 0 <= ny < n
 
 def findNextStep(x, y):
-    maxNum = 0 
-    max_nx = 0
-    max_ny = 0
+    maxNum = a[x][y]
+    max_nx = x
+    max_ny = y
     for dx, dy in zip(dxs, dys):
         nx, ny = x + dx, y + dy
         if inRange(nx, ny) and a[nx][ny] > maxNum:
